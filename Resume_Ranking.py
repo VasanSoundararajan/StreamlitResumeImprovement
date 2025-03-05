@@ -148,12 +148,3 @@ if uploaded_files and job_description:
         projects = extract_projects_certifications(extracted_text)
 
         missing_fields = check_resume_completeness(details, skills, experience, projects)
-
-        # st.subheader("🔹 Suggested Improvements")
-        # if not missing_fields:
-        #     st.success("✅ This resume has all the necessary details.")
-        # # else:
-        # #     for field in missing_fields:
-        # #         new_value = st.text_input(f"Add {field}:")
-        # #         if new_value:
-        # #             details[field] = new_value  # Update details in real-time
